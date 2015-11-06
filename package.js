@@ -1,6 +1,6 @@
 Package.describe({
   name: 'constellation:viewmodel',
-  version: '0.3.2',
+  version: '0.3.3',
   summary: 'Viewmodel inspector plugin for Constellation',
   git: 'https://github.com/JackAdams/constellation-viewmodel.git',
   documentation: 'README.md',
@@ -8,10 +8,10 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.1');
+  api.versionsFrom('1.0');
 
   api.use(['templating','session','blaze','underscore','tracker','reactive-var','reactive-dict'], 'client');
-  api.use('constellation:console@1.2.3', 'client');
+  api.use('constellation:console@1.3.0', 'client');
   api.use('jss:jstree@3.1.3', 'client');
 
   api.addFiles('viewmodel.css','client');
